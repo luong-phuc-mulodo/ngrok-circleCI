@@ -1,6 +1,6 @@
 machine:
   ruby:
     version: 2.2.4p230
-	dependencies:
-		override:
-			- sh run.sh
+dependencies:
+  override:    
+    - sh run.sh
