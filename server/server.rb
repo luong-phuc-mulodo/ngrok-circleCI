@@ -1,11 +1,12 @@
 require 'sinatra'
 require 'json'
 
-post '/payload' do
-  push = JSON.parse(request.body.read)
-  puts "I got some JSON: #{push.inspect}"
+post '/' do
+  postParams = JSON.parse(request.body.read)
+  "I got some JSON: #{postParams.inspect}"
 end
 
 get '/' do
-  "<H1>This is page of Minh Phuc<H1>"
+  getParams = request.params
+  "You have params :  #{getParams.inspect}"
 end
