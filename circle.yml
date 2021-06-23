@@ -1,6 +1,0 @@
-machine:
-  ruby:
-    version: 2.2.4p230
-dependencies:
-  override:    
-    - echo "Please ssh to server and run command sh run.sh"
